@@ -1,8 +1,8 @@
-resource "aws_security_group" "food_db_sg" {
-  name = "security_group_name"
+resource "aws_security_group" "food-db-sg" {
+  name = "food-db-sg"
 
   ingress {
-    from_port   = 5433
+    from_port   = 5432
     to_port     = 5432
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
